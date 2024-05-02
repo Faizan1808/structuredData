@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+*{
+  box-sizing: border-box;
+}
+.rd3t-tree-container text{
+  stroke: none;
+}
+.dialog_content{
+  position: absolute;
+  right: 10PX;
+  border-radius: 6PX;
+  width: 300px;
+  height: auto;
+  top:50px;
+  background-color: #ffe5e5f5;
+  z-index: 99;
+  text-align: left;
+}
+.dev_parent{
+  padding: 24px;
+  height: 400px;
+  overflow: auto;
+
+}
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+.close_ocp{
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.close_ocp >svg{
+  width: 16px;
+}
+.box_parent{
+  display: flex;
+  padding: 24px 10px 0;
+  overflow: auto;
+}
+th{
+  white-space: nowrap;
+}
+.box_3{
+  border: 1px solid ;
+}
+.bx_copmare_title{
+  background-color: #bdd7c2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.bx_copmare_title >p{
+  padding: 0px 6px;
+}
+.no_pad{
+  padding: 0;
+  background-color: #bdd7c2;
+  position: relative;
+  cursor: pointer;
+}
+p{
+  margin: 0;
+  padding: 0;
+}

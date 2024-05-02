@@ -1,0 +1,87 @@
+[
+    {
+        "title": "sap",
+        "data" : [
+            {
+                "attribute_name": "data content data contentewr",
+                "data_type" : "string",
+                "data_type_length" : 6,
+                "uom" : 4.2,
+                "uom_name" : null,
+                "uom_type" : "kg"
+            },
+            {
+                "attribute_name": "ball bearing 6206 zz",
+                "data_type" : "string",
+                "data_type_length" : 62,
+                "uom" : 4.2,
+                "uom_name" : null,
+                "uom_type" : "kg"
+            }
+            
+        ]
+    },
+    {
+        "title": "windchill",
+        "data" : [
+            {
+                "attribute_name": "data content data content",
+                "data_type" : "string",
+                "data_type_length" : 6,
+                "uom" : 4.2,
+                "uom_name" : null,
+                "uom_type" : "kg"
+            },
+            {
+                "attribute_name": "ball bearing 6206 zz",
+                "data_type" : "string",
+                "data_type_length" : 6,
+                "uom" : 4.2,
+                "uom_name" : null,
+                "uom_type" : "kg"
+            }
+        ]
+    },
+    {
+        "title": "structured data",
+        "data" : [
+            {
+                "attribute_name": "data content data content",
+                "data_type" : "string",
+                "data_type_length" : 6,
+                "uom" : 4.2,
+                "uom_name" : null,
+                "uom_type" : "kg"
+            },
+            {
+                "attribute_name": "ball bearing 6206 zz",
+                "data_type" : "string",
+                "data_type_length" : 6,
+                "uom" : 4.2,
+                "uom_name" : null,
+                "uom_type" : "kg"
+            }
+        ]
+    },
+    {
+        "title": "structured data",
+        "data" : [
+            {
+                "attribute_name": "data content data content",
+                "data_type" : "string",
+                "data_type_length" : 6,
+                "uom" : 4.2,
+                "uom_name" : null,
+                "uom_type" : "kg"
+            },
+            {
+                "attribute_name": "ball bearing 6206 zz",
+                "data_type" : "string",
+                "data_type_length" : 6,
+                "uom" : 4.2,
+                "uom_name" : null,
+                "uom_type" : "kg"
+            }
+        ]
+    }
+]
