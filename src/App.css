@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+* , body{
+  font-family: "Lato", sans-serif;
+}
 
 
 *{
@@ -85,4 +87,11 @@ p{
 header a{
   padding: 16px 24px;
   display: inline-block;
+  color: #fff;
+  text-decoration: none;
+
+}
+header{
+  background-color: #ffbb00;
+  text-align: center;
 }

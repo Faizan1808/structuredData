@@ -5,16 +5,16 @@
             {
                 "attribute_name": "data content data contentewr",
                 "data_type" : "string",
-                "data_type_length" : 6,
+                "data_type_length" : 633,
                 "uom" : 4.2,
                 "uom_name" : null,
-                "uom_type" : "kg"
+                "uom_type" : "kgs"
             },
             {
                 "attribute_name": "ball bearing 6206 zz",
                 "data_type" : "string",
-                "data_type_length" : 62,
-                "uom" : 4.2,
+                "data_type_length" : 6,
+                "uom" : 4.23,
                 "uom_name" : null,
                 "uom_type" : "kg"
             }

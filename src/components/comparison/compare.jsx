@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import comparedata from './compare.json';
 import AspectRatioIcon from '@mui/icons-material/AspectRatio';
 
-const Compare = () => {
+const Compare = ({datass}) => {
   const [expanded, setExpanded] = useState({});
   const [data, setData] = useState(comparedata);
   
@@ -18,6 +18,7 @@ const Compare = () => {
 
 
   const getData = (index, name, dataindex) => {
+
     const values = [];
     for (let i = 0; i < data.length; i++) {
         values.push(data[i].data[dataindex][name]);
@@ -56,7 +57,7 @@ const Compare = () => {
             {!expanded[index] && (
               <tbody>
                 {item?.data.map((dataItem, dataIndex) => (
-                  <tr key={index}>
+                  <tr key={index} onClick={()=>{datass(dataItem , dataIndex , 'faizanb' )}} >
                         <td style={{ backgroundColor: getData(index, 'attribute_name', dataIndex) ? "" : "yellow" }}>
                       {dataItem.attribute_name} 
                   </td>

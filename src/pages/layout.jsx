@@ -8,14 +8,14 @@ const Layout = () => {
     <>
     <header>
     <Link  to='/'>Home</Link>
-       <Link  to='/compare'>Compare</Link>
+   <Link  to='/compare'>Compare</Link>
         </header>
         <section>
         <Outlet/>
         </section>
-        <footer>
+        {/* <footer>
             footer content
-        </footer>
+        </footer> */}
     </>
   );
 };
