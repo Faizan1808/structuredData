@@ -81,3 +81,8 @@ p{
   margin: 0;
   padding: 0;
 }
+
+header a{
+  padding: 16px 24px;
+  display: inline-block;
+}
