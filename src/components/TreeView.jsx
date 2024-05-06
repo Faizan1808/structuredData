@@ -34,6 +34,9 @@ function CustomTabPanel(props) {
   );
 }
 
+
+
+
 CustomTabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
@@ -84,7 +87,7 @@ function a11yProps(index) {
             <rect
               x="-80"
               y="-15"
-              width="210"
+              width={nodeDatum.name =='PL_CATEGORY_ATTRIBUTE_REL' ? "250": "210"}
               height="30"
               fill="#e0f7e4"
               stroke="#e0f7e4"
@@ -104,8 +107,9 @@ function a11yProps(index) {
               {nodeDatum.name}{nodeDatum?.children?.length > 0 && ('('+nodeDatum?.children?.length+")") }
             </text>
             <text
-                x="90"
-                y="5"
+                x={nodeDatum.name =='PL_CATEGORY_ATTRIBUTE_REL' ? "130": "90"}
+               
+                y="8"
                 onClick={toggleNode}
                 textAnchor="middle"
                 style={{ fontSize: '20px', fill: 'black' }}
@@ -130,16 +134,8 @@ function a11yProps(index) {
        
       </div>
 
-<Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Items" {...a11yProps(0)} />
-          <Tab label="Attributes" {...a11yProps(1)} />
-          <Tab label="Category" {...a11yProps(2)} />
-        </Tabs>
-      </Box>
-      <CustomTabPanel value={value} index={0}>
       <div id="treeWrapper" style={{ width: "100%", height: "100vh" }}>
+        {console.log(myTreeData)}
         <Tree
           data={myTreeData}
           pathFunc="step"
@@ -155,6 +151,16 @@ function a11yProps(index) {
           initialDepth={0.1}
         />
       </div>
+
+<Box sx={{ width: '100%' }} style={{display:"none"}}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab label="" {...a11yProps(0)} />
+        
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+   
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
       <div id="treeWrappera" style={{ width: "100%", height: "100vh" }}>

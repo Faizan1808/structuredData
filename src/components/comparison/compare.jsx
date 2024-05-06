@@ -5,8 +5,22 @@ import AspectRatioIcon from '@mui/icons-material/AspectRatio';
 const Compare = ({datass}) => {
   const [expanded, setExpanded] = useState({});
   const [data, setData] = useState(comparedata);
-  
 
+  const onj ={
+    name:"23w23",
+    age:"23w23",
+    salr:"23w23"
+  }
+  
+  const onjs ={
+    name:"23w23",
+    age:"23w23",
+    salr:"23w23"
+  }
+const {name , age , salr} = onj;
+const {names , ages , salrs} = onjs;
+console.log(name , age , salr)
+console.log(names , ages , salrs)
 
   const onHideToggle = (indx) => {
     setExpanded(prevExpanded => ({
@@ -16,17 +30,33 @@ const Compare = ({datass}) => {
   };
   
 
-
-  const getData = (index, name, dataindex) => {
-
+  const getData = (index, name, dataindex) => { 
     const values = [];
     for (let i = 0; i < data.length; i++) {
+      const y = 20
         values.push(data[i].data[dataindex][name]);
     }
      const isEqual = values.every((val, i, arr) => val === arr[0]);
     return isEqual
 }
 
+
+ const dataq = () =>{
+
+console.log(data)
+ }
+
+ const sds = [1 ,3 ,4  ,45 , 3]
+ let newData= data.map((x)=>{
+  return {title:x.title}
+ })
+
+ const tsdsd = sds.reduce((item,index)=> item +index , 1000)
+ console.log(tsdsd)
+
+
+
+dataq();
  
 
   return (
