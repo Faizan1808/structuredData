@@ -1,87 +1,114 @@
 [
     {
-        "title": "sap",
+        "title": "SAP",
         "data" : [
             {
-                "attribute_name": "data content data contentewr",
-                "data_type" : "string",
-                "data_type_length" : 633,
-                "uom" : 4.2,
-                "uom_name" : null,
-                "uom_type" : "kgs"
+                "attribute_name": "Division",
+                "data_type_length" : null,
+                "allowed_values": "Design, Engineering",
+                "data_type": "String"
             },
             {
-                "attribute_name": "ball bearing 6206 zz",
-                "data_type" : "string",
-                "data_type_length" : 6,
-                "uom" : 4.23,
-                "uom_name" : null,
-                "uom_type" : "kg"
+                "attribute_name": "Material Number",
+                "data_type_length" : null,
+                "allowed_values": null,
+                "data_type": "String"
+            },
+            {
+                "attribute_name": "Material description",
+                "data_type_length" : null,
+                "allowed_values": null,
+                "data_type": "String"
+            },
+            {
+                "attribute_name": "Material type",
+                "data_type_length" : null,
+                "allowed_values": "Make,Buy",
+                "data_type": "String"
+            },{
+                "attribute_name": "Base Unit of Measure (ISO format)",
+                "data_type_length" : null,
+                "allowed_values": null,
+                "data_type": "String"
             }
             
+          
+           
         ]
     },
     {
-        "title": "windchill",
+        "title": "Structured Data",
         "data" : [
             {
-                "attribute_name": "data content data content",
-                "data_type" : "string",
-                "data_type_length" : 6,
-                "uom" : 4.2,
-                "uom_name" : null,
-                "uom_type" : "kg"
+                "attribute_name": "pl_owner",
+                "data_type_length" : 32,
+                "allowed_values": "Design, Engineering",
+                "data_type": "String"
             },
             {
-                "attribute_name": "ball bearing 6206 zz",
-                "data_type" : "string",
-                "data_type_length" : 6,
-                "uom" : 4.2,
-                "uom_name" : null,
-                "uom_type" : "kg"
+                "attribute_name": "pl_item_number",
+                "data_type_length" : 12,
+                "allowed_values": null,
+                "data_type": "String"
+            },
+            {
+                "attribute_name": "pl_item_details",
+                "data_type_length" : 200,
+                "allowed_values": null,
+                "data_type": "String"
+            },
+            {
+                "attribute_name": "pl_makebuy",
+                "data_type_length" : 32,
+                "allowed_values": "Make,Buy",
+                "data_type": "String"
+            },
+            {
+                "attribute_name": "pl_units",
+                "data_type_length" : 32,
+                "allowed_values": null,
+                "data_type": "String"
             }
+          
+           
         ]
     },
     {
-        "title": "structured data",
+        "title": "Windchill",
         "data" : [
             {
-                "attribute_name": "data content data content",
-                "data_type" : "string",
-                "data_type_length" : 6,
-                "uom" : 4.2,
-                "uom_name" : null,
-                "uom_type" : "kg"
+                "attribute_name": "View",
+                "data_type_length" : 32,
+                "allowed_values": "Design, Manufacturing, Service",
+                "data_type": "String"
             },
             {
-                "attribute_name": "ball bearing 6206 zz",
-                "data_type" : "string",
-                "data_type_length" : 6,
-                "uom" : 4.2,
-                "uom_name" : null,
-                "uom_type" : "kg"
-            }
-        ]
-    },
-    {
-        "title": "structured data",
-        "data" : [
-            {
-                "attribute_name": "data content data content",
-                "data_type" : "string",
-                "data_type_length" : 6,
-                "uom" : 4.2,
-                "uom_name" : null,
-                "uom_type" : "kg"
+                "attribute_name": "Number",
+                "data_type_length" : 32,
+                "allowed_values": null,
+                "data_type": "String"
             },
             {
-                "attribute_name": "ball bearing 6206 zz",
-                "data_type" : "string",
-                "data_type_length" : 6,
-                "uom" : 4.2,
-                "uom_name" : null,
-                "uom_type" : "kg"
+                "attribute_name": "Name",
+                "data_type_length" : 32,
+                "allowed_values": null,
+                "data_type": "String"
+            },
+            {
+                "attribute_name": "Source",
+                "data_type_length" : 32,
+                "allowed_values": "Make,Buy",
+                "data_type": "String"
+            },
+            {
+                "attribute_name": "defaultunit",
+                "data_type_length" : 32,
+                "allowed_values": "EACH, KG, Gram, Mt, CM, Litre",
+                "data_type": "String"
             }
+           
         ]
     }
+   
+ 
 ]

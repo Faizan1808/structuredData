@@ -33,7 +33,6 @@ console.log(names , ages , salrs)
   const getData = (index, name, dataindex) => { 
     const values = [];
     for (let i = 0; i < data.length; i++) {
-      const y = 20
         values.push(data[i].data[dataindex][name]);
     }
      const isEqual = values.every((val, i, arr) => val === arr[0]);
@@ -76,11 +75,12 @@ dataq();
               {!expanded[index] && (
                 <tr>
                   <th>Attribute Name</th>
-                  <th>Data Type</th>
                   <th>Data Type Length</th>
-                  <th>UOM</th>
-                  <th>UOM Name</th>
-                  <th>UOM Type</th>
+                  <th>Allowed Values</th>
+                  
+                 
+                  <th>Data Type</th>
+                  
                 </tr>
               )}
             </thead>
@@ -91,21 +91,19 @@ dataq();
                         <td style={{ backgroundColor: getData(index, 'attribute_name', dataIndex) ? "" : "yellow" }}>
                       {dataItem.attribute_name} 
                   </td>
-                  <td style={{ backgroundColor: getData(index, 'data_type', dataIndex) ? "" : "yellow" }}>
-                      {dataItem.data_type}
-                  </td>
+                  
                   <td style={{ backgroundColor: getData(index, 'data_type_length', dataIndex) ? "" : "yellow" }}>
                       {dataItem.data_type_length}
                   </td>
-                  <td style={{ backgroundColor: getData(index, 'uom', dataIndex) ? "" : "yellow" }}>
-                      {dataItem?.uom}
+                  <td style={{ backgroundColor: getData(index, 'allowed_values', dataIndex) ? "" : "yellow" }}>
+                      {dataItem?.allowed_values}
                   </td>
-                  <td style={{ backgroundColor: getData(index, 'uom_name', dataIndex) ? "" : "yellow" }}>
-                      {dataItem.uom_name}
+                  <td style={{ backgroundColor: getData(index, 'data_type', dataIndex) ? "" : "yellow" }}>
+                      {dataItem.data_type}
                   </td>
-                  <td style={{ backgroundColor: getData(index, 'uom_type', dataIndex) ? "" : "yellow" }}>
-                      {dataItem.uom_type}
-                  </td>
+                
+                  
+                
                  
                 </tr>
                 ))}
